@@ -45,7 +45,7 @@ export default function Dropdown(props: Submenu) {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href={`/tops${props.gender}`}
+                    href={`/${props.gender}-tops`}
                     className={classNames(
                       active ? "text-gray-100 bg-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm"
@@ -58,7 +58,7 @@ export default function Dropdown(props: Submenu) {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href="#"
+                    href={`/${props.gender}-bottoms`}
                     className={classNames(
                       active ? "text-gray-100 bg-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm"
@@ -71,13 +71,13 @@ export default function Dropdown(props: Submenu) {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href="#"
+                    href={`/${props.gender}-hoodies`}
                     className={classNames(
                       active ? "text-gray-100 bg-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
-                    Footware
+                    Hoodies
                   </a>
                 )}
               </Menu.Item>
